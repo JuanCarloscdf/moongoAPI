@@ -1,0 +1,22 @@
+get http://localhost:3000/api/msg/63ed3e545106e6db3153e4c7
+###
+post http://localhost:3000/api/msg/63ed3e545106e6db3153e4c7
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2VkNDQ5YzYxYWI5ODE0YmU4ZTk5YzgiLCJ1c2VybmFtZSI6Im1vcmRlbG9uMSIsImlhdCI6MTY3NjQ5ODUwNywiZXhwIjoxNjc2NTAyMTA3fQ.5N5IZd3qCWAcAIvl9rn6Ubk_Wu4i4Yu4o3exiWrccqA
+
+{
+    "content":"na mas denme de comer bien para qe no vea chuletas andantes cuando vea a alguien ",
+    "important":true
+}
+###
+put http://localhost:3000/api/msg/63ec245bdc93f2dfa40c356f
+Content-Type: application/json
+
+{
+    "content":"modificado por segunda vez",
+    "important":true
+}
+###
+delete http://localhost:3000/api/msg/63ec245bdc93f2dfa40c356f
+###
+patch http://localhost:3000/api/msg

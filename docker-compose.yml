@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  mongo:
+    container_name: monguito
+    image: mongo:6.0.4
+    restart: always
+    ports:
+      - 27017:27017
+    volumes:
+      - ./mongodata:/data/db
+    environment:
+       MONGO_INITDB_ROOT_USERNAME: user
+       MONGO_INITDB_ROOT_PASSWORD: password

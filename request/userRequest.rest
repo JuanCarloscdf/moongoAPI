@@ -1,0 +1,23 @@
+get http://localhost:3000/api/user?email=hotlight@hotmail.es&password=123451fsdfsd2
+###
+post http://localhost:3000/api/user
+Content-Type: application/json
+
+{
+    "name":"test",
+    "username": "mordelon1",
+    "email": "test@hotmail.es",
+    "password": "123456"
+}
+###
+put http://localhost:3000/api/user
+Content-Type: application/json
+
+{
+    "name" : "testted sister",
+    "password": "11112222"
+}
+###
+delete http://localhost:3000/api/user?email=ttss@hotmail.es&password=1234512
+###
+patch http://localhost:3000/api/user

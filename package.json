@@ -1,0 +1,35 @@
+{
+  "name": "apirestmysql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "PORT=1234 NODE_ENV=test npx jasmine spec/userSpec.js",
+    "start": "NODE_ENV=production node ./src/index.js",
+    "dev": "NODE_ENV=development nodemon ./src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^1.3.3",
+    "eslint-plugin-jasmine": "4.1.3",
+    "jasmine": "4.5.0",
+    "nodemon": "2.0.20",
+    "standard": "17.0.0"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cors": "2.8.5",
+    "dotenv": "16.0.3",
+    "express": "4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "6.9.1",
+    "mongoose-unique-validator": "^3.1.0",
+    "morgan": "1.10.0"
+  }
+}
